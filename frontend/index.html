@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>BC HAKATON</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+	<link rel="stylesheet" href="assets/css/noscript.css" />
+</noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <i class="fa fa-recycle fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>NE BUDI NEM, POŠALJI NADLEŽNIMA SPEM</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#ideja">Ideja</a></li>
+                    <li><a href="#aplikacija">Prijavi</a></li>
+                    <li><a href="#onama">O nama</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#problemi">Problemi</a></li>
+                    <li><a href="#elements">Zabava</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Ideja -->
+            <article id="ideja">
+                <h2 class="major">O održivom razvoju</h2>
+                <span class="image main"><img src="images/intro.jpg" alt="" /></span>
+                <p>Održivi razvoj podrazumeva takav razvoj društva koji raspoloživim resursima zadovoljava ljudske potrebe, ne ugrožavajući prirodne sisteme i životnu sredinu, čime se osigurava dugoročno postojanje ljudskog društva i njegovog okruženja.
+                    Koncept održivog razvoja predstavlja novu strategiju i filozofiju društvenog razvoja. Održivi razvoj se najčešće dovodi u vezu sa zaštitom životne sredine, odnosno nastojanjem da se zabrinutost za opstanak živog sveta na planeti Zemlji
+                    poveže sa očuvanjem prirodnih resursa i brojnim ekološkim izazovima koji stoje pred svakim društvom, državom i čovečanstvom u celini. Aktuelnosti samog pojma doprinosi ugroženost životne sredine, koja se ogleda u ekološkim izazovima
+                    i problemima kao što su: globalno zagrevanje, smanjivanje ozonskog omotača, „efekat staklene bašte“, nestanak šuma, pretvaranje plodnog zemljišta u pustinje, pojava kiselih kiša, izumiranje životinjskih i biljnih vrsta. </p>
+            </article>
+
+            <!-- Aplikacija -->
+            <article id="aplikacija">
+                <h2 class="major">Prijavi</h2>
+                <p>Klikom na mapu označite gde se nalazi zagadjenje i potom izaberite koja je vrsta zagadjenja</p>
+                <span class="image main">
+					<div id="map"></div>
+				</span>
+                <!--<div id="cities" style="overflow-y:scroll; height:400px;"></div>-->
+                
+                <div class="field">
+                    <label for="demo-category">Kategorija</label>
+                    <select name="demo-category" id="demo-category">
+                        <option value="0">-</option>
+					    <option value="1">Zagаđenje vode</option>
+					    <option value="2">Zagаđenje vazduha</option>
+					    <option value="3">Zagаđenje zemljišta</option>
+				    </select>
+                </div>
+                
+                <div id="options">
+                </div>
+                
+                <div id="map_action">
+                    <ul class="actions">
+                        <li><button type="button" class="button icon solid fa-map-marker" id="deleteMarker">OBRIŠI MARKER</button></li>
+                        <li><button type="button" class="button" id="getMail">GENERIŠI MEJL</button></li>
+                        <li><button type="button" class="button primary" id="sendMail" onclick="alert('Mejl poslat')">POŠALJI MEJL</button><li>
+                    </ul>
+                </div>
+                
+            </article>
+
+            <!-- O nama -->
+            <article id="onama">
+                <h2 class="major">O nama</h2>
+                <span class="image main"><img src="images/onama.png" alt="" /></span>
+                <p>Vođeni ekološkom svešću i razumevanjem važnosti održivog razvoja, Stefan, Boris, Momčilo i Mihailo su odlučili da se prijave na BC hakaton i kroz svoju profesiju daju doprinos rešavanju ovog problema
+                </p>
+            </article>
+
+            <!-- Kontakt -->
+            <article id="kontakt">
+                <h2 class="major">Kontakt</h2>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Ime</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <!--<div class="field half">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>-->
+                        <div class="field">
+                            <label for="message">Poruka</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="button" value="Pošalji poruku" class="Primary" onclick="alert('Poruka poslata')" /></li>
+                        <li><input type="reset" value="Resetuj" /></li>
+                    </ul>
+                </form>
+                <ul class="icons">
+                    <!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+                    <li><a href="https://www.facebook.com/prijavi.zagadjenje" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://instagram.com/prijavi_zagadjenje?igshid=4bmlj38j2p2h" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <!--<li><a href="https://github.com/djanluka" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+                    <!--<li><a href="https://github.com/idakucamupeva" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+                    <!--<li><a href="https://github.com/stefandur" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+                    <!--<li><a href="https://github.com/momciloknezevic7" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+                    <li><a href="https://github.com/djanluka/bc-hakaton" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </article>
+            
+            <!--Problemi-->
+            <article id="problemi">
+                <section>
+                    <h3 class="major">Problemi</h3>
+                    <h4>Ne budi nem, reši problem!</h4>
+                    <div class="table-wrapper" style="overflow-y:scroll; height:400px;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Vrsta</th>
+                                    <th>Mesto</th>
+                                    <th>Vreme</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+            </article>
+            
+            <!-- Elements -->
+            <article id="elements">
+              <p style="text-align: center; font-size: 1.7em;">Dok čekaš da se problem reši, testiraj da li ti se sreća smeši 😀 🎰</p>
+                <div id="slot-machine" class="slot-machine"></div>
+
+                <button id="play-button" style="text-align: center;">Obrni</button>
+            </article>
+
+        </div>
+<!-- Main 
+        <footer id="footer">
+            <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+      -->
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAudB64fbnnD_d7JnadOPhd1UN0Nl7CowY&callback=initMap&libraries=&v=weekly" defer>
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="slot-machine-gen/dist/slot-machine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slot-machine-gen/dist/slot-machine.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="slot-machine-gen/demo/css/demo.css"/>
+    <script>
+      const reels = [
+        {
+          imageSrc: 'slot-machine-gen/images/slike/reel-strip1.jpg',
+          symbols: [
+            {
+              title: 'cherry',
+              position: 100,
+              weight: 2
+            },
+            {
+              title: 'plum',
+              position: 300,
+              weight: 6
+            },
+            {
+              title: 'orange',
+              position: 500,
+              weight: 5
+            },
+            {
+              title: 'bell',
+              position: 700,
+              weight: 1
+            },
+            {
+              title: 'cherry',
+              position: 900,
+              weight: 3
+            },
+            {
+              title: 'plum',
+              position: 1100,
+              weight: 5
+            }
+          ]
+        },
+        {
+          imageSrc: 'slot-machine-gen/images/slike/reel-strip2.jpg',
+          symbols: [
+            {
+              title: 'orange',
+              position: 100,
+              weight: 6
+            },
+            {
+              title: 'plum',
+              position: 300,
+              weight: 5
+            },
+            {
+              title: 'orange',
+              position: 500,
+              weight: 3
+            },
+            {
+              title: 'plum',
+              position: 700,
+              weight: 5
+            },
+            {
+              title: 'cherry',
+              position: 900,
+              weight: 2
+            },
+            {
+              title: 'bell',
+              position: 1100,
+              weight: 1
+            }
+          ]
+        },
+        {
+          imageSrc: 'slot-machine-gen/images/slike/reel-strip3.jpg',
+          symbols: [
+            {
+              title: 'cherry',
+              position: 100,
+              weight: 4
+            },
+            {
+              title: 'bell',
+              position: 300,
+              weight: 1
+            },
+            {
+              title: 'orange',
+              position: 500,
+              weight: 6
+            },
+            {
+              title: 'plum',
+              position: 700,
+              weight: 5
+            },
+            {
+              title: 'plum',
+              position: 900,
+              weight: 3
+            },
+            {
+              title: 'cherry',
+              position: 1100,
+              weight: 2
+            }
+          ]
+        }
+      ];
+
+      window.onload = function() {
+        const callback = function(payLine) {
+          console.log(payLine[0].title + ' | ' + payLine[1].title + ' | ' + payLine[2].title);
+        };
+
+        var machine = document.getElementById('slot-machine');
+        var button = document.getElementById('play-button');
+
+        const slot = slotMachine(machine, reels, callback);
+
+        button.addEventListener('click', () => slot.play());
+      };
+    </script>
+    
+</body>
+
+</html>
