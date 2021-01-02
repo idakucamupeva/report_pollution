@@ -14,6 +14,9 @@ e-mails anonymously to the institutions that are responsible for the area where 
 pollution and to choose what type of pollution he had seen, and then ready to send e-mail with recipient is generated.
 
 Prezi presentation(in Serbian): https://prezi.com/view/05z0zskQOgIh507EQbns/
+
+![demo](demo_app.png)
+
 #### Authors
 -   **Momcilo Knezevic**
 -   **Stefan Durlevic**
