@@ -14,6 +14,8 @@ e-mails anonymously to the institutions that are responsible for the area where 
 
 Prezi presentation(in Serbian): https://prezi.com/view/05z0zskQOgIh507EQbns/
 
+Video presentation(in Serbian): https://youtu.be/Z6_kZelvFMw?t=1472
+
 ![demo](demo_app.png)
 
 #### Authors
