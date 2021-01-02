@@ -1,4 +1,4 @@
-# FraudDetection
+# Report pollution
 
 Web application designed to ease pollution reporting
 
