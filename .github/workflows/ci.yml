@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: "Login to docker hub"
+      - name: "Login"
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASS }}
       - name: "Generate .env"
         run: echo 'PORT=3000' >> backend/.env && echo 'PATH_HTML=../frontend/index.html' >> backend/.env &&  echo 'PATH_FRONTEND=../frontend' >> backend/.env
-      - name: "Docker build  with  latest tag"
+      - name: "DockerBuild"
         run: docker build -t hamacarina98/azrs:latest .
-      - name: "Docker push with latest tag"
+      - name: "DockerPush"
         run: docker push hamacarina98/azrs:latest
